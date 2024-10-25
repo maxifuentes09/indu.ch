@@ -1,5 +1,7 @@
 /* Estilos generales */
-body {
+body {filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3)); /* Ajusta el desplazamiento, difuminado y transparencia */
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
