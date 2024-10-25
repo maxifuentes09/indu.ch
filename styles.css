@@ -12,6 +12,40 @@ a {
     text-decoration: none;
 }
 
+
+
+body {
+    font-family: 'Cinzel', serif; /* Aplica la fuente Cinzel a todo el cuerpo del documento */
+    font-weight: 400; /* Peso por defecto */
+}
+
+h2, h3 {
+    font-family: 'Cinzel', serif; /* Aplica Cinzel a todos los títulos */
+    font-weight: 700; /* Estilo más pesado para destacar los títulos */
+}
+
+p, a {
+    font-family: 'Cinzel', serif; /* Aplica Cinzel a los párrafos y enlaces */
+    font-weight: 400; /* Peso normal para el texto */
+}
+
+
+.image-container {
+    width: 100vw;  /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
+    height: 100vh; /* Asegura que el contenedor ocupe todo el alto de la pantalla */
+    margin: 0;     /* Elimina cualquier margen extra */
+    padding: 0;    /* Elimina cualquier relleno extra */
+}
+
+.custom-image {
+    width: 100%;    /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: 100%;   /* Hace que la imagen ocupe todo el alto del contenedor */
+    object-fit: cover; /* Cubre completamente el contenedor sin deformarse */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Añade una sombra sutil */
+    border-radius: 10px; /* Bordes redondeados como detalle */
+}
+
+
 /* Header y navegación */
 header {
     border-bottom: 1px solid #e0e0e0;
