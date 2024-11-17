@@ -19,18 +19,19 @@
     </header>
 
     <main>
-        <div class="product-container">
-            <div class="product-images">
-                <img src="img/A1.png" alt="ROLEX TEE" class="main-image" id="mainImage">
-                <div class="thumbnail-container">
-                    <img src="/placeholder.svg?height=100&width=100&text=Front" alt="ROLEX TEE Front" class="thumbnail active" data-image="/placeholder.svg?height=500&width=500&text=Front">
-                    <img src="/placeholder.svg?height=100&width=100&text=Side" alt="ROLEX TEE Side" class="thumbnail" data-image="/placeholder.svg?height=500&width=500&text=Side">
-                    <img src="/placeholder.svg?height=100&width=100&text=Back" alt="ROLEX TEE Back" class="thumbnail" data-image="/placeholder.svg?height=500&width=500&text=Back">
-                </div>
+        <div class="carrusel">
+            <button class="boton boton--izquierda" onclick="moverSlide(-1)">&#10094;</button>
+            <div class="carrusel__contenedor" id="contenedorCarrusel">
+                <div class="carrusel__slide"><img src="img/rosa1.jpg" alt="Imagen 1"></div>
+                <div class="carrusel__slide"><img src="img/rosa2.jpg" alt="Imagen 2"></div>
+                <div class="carrusel__slide"><img src="img/rosa3.jpg" alt="Imagen 3"></div>
+                <!-- Agrega más imágenes según sea necesario -->
             </div>
+            <button class="boton boton--derecha" onclick="moverSlide(1)">&#10095;</button>
+        </div>
             <div class="product-details">
                 <h1>REMERA BASICA ADIDAS</h1>
-                <p class="price">$8.000</p>
+                <p class="price">$9.500</p>
                 <p>talles reales.</p>
                 <form id="addToCartForm">
                     <div class="size-selector">
@@ -44,7 +45,7 @@
                         <input type="number" id="quantity" value="1" min="1">
                         <button type="button" id="increaseQuantity">+</button>
                     </div>
-                    <a href="https://wa.link/72fdk4" class="buy-now-link">
+                    <a href="https://wa.me/p/27026406450339104/5491165535765" class="buy-now-link">
                         <button type="button" class="buy-now">Comprar ahora</button>
                       </a>
                 </form>

@@ -354,3 +354,164 @@ footer {
         flex-direction: column;
     }
 }
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+.carrusel {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.carrusel__contenedor {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carrusel__slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carrusel__slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.carrusel__slide img:hover {
+    transform: scale(1.05);
+}
+.boton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+.boton:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.boton--izquierda {
+    left: 10px;
+}
+.boton--derecha {
+    right: 10px;
+}
+
+
+
+/* Importamos la fuente 'Playfair Display' desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+/* Estilos generales de la sección */
+.sobre-nosotros {
+    background-color: #f7f7f7; /* Fondo suave */
+    padding: 40px; /* Espaciado alrededor */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    max-width: 800px; /* Máximo ancho */
+    margin: 40px auto; /* Centrado */
+    opacity: 0; /* Comienza invisible para la animación */
+    animation: fadeIn 1.5s forwards; /* Animación de aparición */
+}
+
+/* Animación de aparición suave */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Desplazamiento desde abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+    }
+}
+
+/* Estilo del título */
+.sobre-nosotros h2 {
+    font-family: 'Cinzel', serif; /* Fuente Cinzel */
+    font-size: 2.5rem; /* Tamaño grande */
+    text-align: center;
+    color: #333; /* Color de texto oscuro */
+    margin-bottom: 20px; /* Espaciado debajo */
+    text-transform: uppercase; /* Mayúsculas */
+    cursor: pointer; /* Cambia el cursor a mano cuando pasa sobre el título */
+    opacity: 0; /* Comienza invisible para la animación */
+    animation: fadeInTitle 1s forwards 0.5s; /* Animación de aparición con retardo */
+}
+
+/* Animación para el título */
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Desplazamiento desde arriba */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+    }
+}
+
+/* Estilo de los párrafos */
+.sobre-nosotros p {
+    font-family: 'Playfair Display', serif; /* Fuente Playfair Display */
+    font-size: 1.1rem; /* Tamaño de texto legible */
+    color: #555; /* Color gris suave */
+    line-height: 1.6; /* Espaciado de línea */
+    margin-bottom: 15px; /* Espaciado entre párrafos */
+    text-align: justify; /* Alineación justificada */
+    opacity: 0; /* Comienza invisible para la animación */
+    animation: fadeInText 1.5s forwards 1s; /* Animación de aparición para los párrafos */
+}
+
+/* Animación para los párrafos */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateX(-20px); /* Desplazamiento desde la izquierda */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0); /* Posición final */
+    }
+}
+
+/* Eliminar margen inferior en el último párrafo */
+.sobre-nosotros p:last-of-type {
+    margin-bottom: 0; /* Eliminar margen inferior en el último párrafo */
+}
+
+
+
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 500;
+}

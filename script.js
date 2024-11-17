@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 //ADIDAS1
 
 
+
 document.addEventListener('DOMContentLoaded', function() {
     const mainImage = document.getElementById('mainImage');
     const thumbnails = document.querySelectorAll('.thumbnail');
@@ -91,3 +92,21 @@ document.addEventListener('DOMContentLoaded', function() {
         alert(`Comprando ahora: ${quantity} ROLEX TEE(s) de talla ${size}`);
     });
 });
+
+
+let indiceActual = 0;
+const slides = document.querySelectorAll('.carrusel__slide');
+const totalSlides = slides.length;
+
+function moverSlide(direccion) {
+    indiceActual += direccion;
+    if (indiceActual < 0) {
+        indiceActual = totalSlides - 1;
+    } else if (indiceActual >= totalSlides) {
+        indiceActual = 0;
+    }
+    document.getElementById('contenedorCarrusel').style.transform = `translateX(-${indiceActual * 100}%)`;
+}
+
+
+
